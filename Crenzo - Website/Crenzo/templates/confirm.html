@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='confirm.css')}}" />
+{% extends 'base.html' %}
+{% block title %} Confirmed {% endblock %}
+
+{% block content %}
+    <div class="body">
+        <div class="main-cont">
+            <h2>Booking Confirmed!</h2>
+            <h6>Details have been sent to your email.</h6>
+            <div class="display">
+                <img class="car" src="{{ url_for('static', filename='images/car.png')}}" />
+            </div><br><br>
+            <h2>Booking Number: #554429</h2><br>
+            <button type="submit" class="btn btn-primary">View Profile</button>
+        </div>
+        <img class="sent" src="{{ url_for('static', filename='images/sent.jpg')}}" />
+    </div>
+{% endblock %}

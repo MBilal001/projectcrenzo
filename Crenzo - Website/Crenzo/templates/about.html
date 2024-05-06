@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='about.css')}}" />
+{% extends 'base.html' %}
+{% block title %} About {% endblock %}
+
+{% block content %}
+<div class='Main-Section'>
+    <div class='section1'>
+      <div class='cont'>
+        <div class='cont-text'>
+          <h1>Explore the freedom of the open road with our car rental service</h1>
+          <h4>where every journey is an adventure, and every mile is a story waiting to be told.</h4>
+          <a href="{{ url_for('vehicle')}}"><button class='btn'>Rent a Car Now &#8594;</button></a>
+        </div>
+      </div>
+      <div class='para'>
+        <p>OVER 1 MILLION CARS RENTED</p>
+        <p>⭐⭐⭐⭐⭐ 4,506 Reviews</p>
+      </div>
+
+      <div class='carousel'>
+      <marquee>
+        <img src="{{ url_for('static', filename='images/Audi.png')}}"></img>
+        <img src="{{ url_for('static', filename='images/BMW.png')}}"></img>
+        <img src="{{ url_for('static', filename='images/Mercedes-Benz.png')}}"></img>
+        <img src="{{ url_for('static', filename='images/Tesla.png')}}"></img>
+        <img src="{{ url_for('static', filename='images/Toyota.png')}}"></img>
+      </marquee>
+      </div>
+    </div>
+
+    <div class="section2">
+        <div class="left">  
+          <h1>Experience the convenience of renting a car, tailored to your needs;</h1>
+          <h4>With our wide range of vehicles and seamless booking process, your journey begins the moment you step into one of our cars.</h4>
+        </div>
+        <div class="right">
+          <img src="{{ url_for('static', filename='images/car.png')}}"></img>
+        </div>
+    </div>
+
+    <div class="section7">
+        <div class="left7">
+          <img src="{{ url_for('static', filename='images/car.png')}}"></img>
+        </div>
+        <div class="right7">
+          <h4>At our car rental company, we prioritize your comfort and safety.</h4>
+          <p>From the moment you make a reservation to the time you return the vehicle, we ensure a hassle-free experience with top-notch customer service.</p>
+          <p><b>Your privacy matters:</b> We handle your personal information with the utmost care, ensuring it remains confidential and secure.</p>
+          <a href="{{url_for('contact')}}"><h6>Contact us today! &#8594;</h6></a>
+        </div>
+    </div>
+</div>
+{% endblock %}

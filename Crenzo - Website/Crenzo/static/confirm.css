@@ -1,0 +1,21 @@
+.body{
+    display: flex;
+    width: 70%;
+    margin: 50px auto;
+}
+.main-cont{
+    margin: 0px auto;
+}
+
+.display{
+    margin-top: 50px;
+}
+
+.car img{
+    width: 350px;
+    height: 200px;
+}
+.sent{
+    width: 400px;
+    height: 400px;
+}

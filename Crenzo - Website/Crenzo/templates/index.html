@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRENZO</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css')}}" />
+</head>
+<body>
+    <div class="main-cont">
+        <img src="{{ url_for('static', filename='images/CRENZOLogo.png')}}"/>
+        <div class="cont">
+            <a href="{{url_for('login')}}" type="submit" style="background-color: #089508;">Log In</a>
+            <a href="{{url_for('signup')}}" type="submit" style="background-color: #0074D9;">Sign Up</a>
+            <a href="{{url_for('home')}}" type="submit" style="background-color: #AFA8A8;">Continue as guest</a>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400..900&family=Nanum+Gothic+Coding&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    background-color: #333333;
+    font-family: "Poppins", sans-serif;
+}
+
+.main-cont{
+    width: 100%;
+    margin: 80px auto;
+}
+
+.main-cont img{
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont{
+    margin: 20px auto;
+    width: 40%;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cont h1{
+    text-align: center;
+}
+
+.cont input{
+    border-radius: 20px;
+    border: 1px solid #333333;
+    padding: 8px;
+    padding-left: 20px;
+    width: 80%;
+    margin: 0px auto;
+}
+.cont small{
+    font-size: 16px;
+    text-align: center;
+    color: rgb(42, 117, 167);
+    cursor: pointer;
+}
+
+.cont button{
+    width: 200px;
+    margin: 0px auto;
+}
+
+.cont p{
+    margin: 20px auto;
+}
+.cont a{
+    margin: 0px auto;
+    cursor: pointer;
+}

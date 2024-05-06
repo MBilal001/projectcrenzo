@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="{{url_for('static', filename='account.css')}}" />
+{% extends 'base.html' %}
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+<form class="main-cont" method="post" enctype="multipart/form-data">
+    <div class="left">
+        <div class="userpp">
+            <img src="{{ url_for('get_image', email=email) }}"/>
+            <input type="file" name="file">
+        </div>
+
+        <hr style="margin-top: 50px;">
+        <label>username:</label>
+        <p style="font-weight: 600; color: rgb(66, 136, 187);">{{name}}</p>
+        <label>Email:</label><br>
+        <p style="font-weight: 600; color: rgb(66, 136, 187);">{{email}}</p>
+        <button type="submit" class="btn btn-primary" style="margin-top: 15%; width: 100%;">Save</button>
+    </div>
+    <div class="right">
+        <h4>Upcoming Bookings:</h4>
+        <p>12/12/2023 - 01/01/2024</p>
+        <hr>
+        <h4>Your Rentals:</h4>
+        <img src="{{ url_for('static', filename='images/car.png')}}" />
+    </div>
+</form>
+
+{% endblock %}

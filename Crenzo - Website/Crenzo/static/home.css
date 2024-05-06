@@ -1,0 +1,101 @@
+.main-cont{
+    width: 90%;
+    margin: 0px auto;
+}
+.section1{
+    display: flex;
+}
+
+.top-bar{
+    border-radius: 50px;
+    border: 1px solid #333333;
+    padding: 20px;
+    display: flex;
+    width: fit-content;
+    margin-top: 20px;
+}
+
+.top-bar input {
+    border: none;
+}
+.top-bar label {
+    color: #818181;
+}
+.date{
+    padding-left: 20px;
+    border-left: 1px solid #333333;
+}
+.time{
+    padding-left: 20px;
+    border-left: 1px solid #333333;
+}
+.search input{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.btn2{
+    margin-top: 30px;
+    margin-left: 20px;
+    height: fit-content;
+    border: none;
+    padding: 20px;
+    color: white;
+    background-color: #00B400;
+    border-radius: 50px;
+    width: 150px;
+    font-weight: 700;
+}
+
+.section2{
+    margin: 100px auto;
+    display: flex;
+}
+
+.section2 .left{
+    margin-left: 50px;
+}
+.section2 .right{
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 600px;
+    text-align: center;
+}
+
+.section3{
+    text-align: center;
+}
+
+.section3 p{
+    font-size: 20px;
+    color: #0A4E92;
+    width: 70%;
+    margin: 0px auto;
+}
+
+.section4{
+    margin-top: 100px;
+}
+
+.section4 p {
+    font-size: 20px;
+}
+
+.section5{
+    margin-top: 100px;
+}
+.section5 img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.carousel{
+    margin: 0px auto;
+    width: 80%;
+}
+.section6{
+    margin-top: 100px;
+}
+
+.section7{
+    margin-top: 80px;
+}

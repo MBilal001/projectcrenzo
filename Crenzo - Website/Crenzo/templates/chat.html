@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='chat.css')}}" />
+{% extends 'base.html' %}
+{% block title %} Chat {% endblock %}
+
+{% block content %}
+    <body class="body">
+        <div class="main-cont">
+            <div class="chat-top">
+                <img src="{{ url_for('static', filename='images/car.png')}}" />
+                <h4>NISSAN QASHQAI</h4>
+                <p>Listing Price: <b>£419.95</b></p>
+            </div><hr>
+            <div class="chat-main">
+                <h6>You are speaking with<br><span style="font-weight: bold;">ROB</span></h6>
+                <div class="chat-box">
+                    <p>How may I help?</p>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Write..."/>
+                    <button type="submit">Send</button>
+                </div>
+            </div>
+            <div class="confirm">
+                <p>Confirm booking below:</p>
+                <p>Price: £419.95</p>
+                <p>Booking Dates: 12/12/2023 - 01/01/2024</p>
+                <a href="{{ url_for('confirm')}}"><button type="submit" class="btn btn-primary">Accept</button></a>
+                <a href="{{ url_for('vehicle')}}"><button type="submit" class="btn btn-secondary">Decline</button></a>
+            </div>
+        </div>
+    </body>
+{% endblock %}

@@ -1,0 +1,24 @@
+.section1{
+    width: 100%;
+}
+.section1-cont{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+.section2{
+    display: flex;
+}
+.left{
+    margin-left: 20px;
+    padding: 20px;
+    margin-top: 40px;
+    height: fit-content;
+    border-radius: 20px;
+    width: 400px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.left h5{
+    text-align: center;
+}

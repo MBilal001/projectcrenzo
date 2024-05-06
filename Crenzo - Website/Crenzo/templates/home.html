@@ -1,0 +1,97 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='home.css')}}" />
+{% extends 'base.html' %}
+{% block title %} Home {% endblock %}
+
+{% block content %}
+    <div class="main-cont">
+        <section class="section1">
+            <div class="top-bar">
+                <div class="search">
+                    <input type="text" placeholder="🔍 Enter pick-up location"/>
+                </div>
+                <div class="date">
+                    <label>Start Date</label><br>
+                    <input type="date" />
+                </div>
+                <div class="time">
+                    <label>Time</label><br>
+                    <input type="time" />
+                </div>
+                <div class="date">
+                    <label>End Date</label><br>
+                    <input type="date" />
+                </div>
+                <div class="time">
+                    <label>Time</label><br>
+                    <input type="time" />
+                </div>
+            </div>
+            <a href="{{ url_for('vehicle')}}"><button type="submit" class="btn2 btn-secondary">Search</button></a>  
+        </section>
+    
+        <section class="section2">
+            <!--Left for image and right for the text-->
+            <div class="left">
+                <img src="{{ url_for('static', filename='images/car.png')}}" />
+            </div>
+            <div class="right">
+                <h2>Book The Car You Need and Get On The Roads In Minutes</h2>
+                <hr style="border: 4px solid #D72323;">
+                <a href="{{ url_for('vehicle')}}"><button class="btn2">BOOK NOW</button></a>
+                <a href="{{ url_for('vehicle')}}"><button class="btn2" style="background-color: white; color: #00B400; border: 1px solid #333333;">Explore</button></a>
+            </div>
+        </section>
+
+        <section class="section3">
+            <div>
+                <h1>CRENZO</h1>
+                <p>Find the perfect car for your needs or turn your vehicle into extra income by listing it with us. Discover a world of convenience and flexibility in car rental with Crenzo.</p>
+            </div>
+        </section>
+
+        <section class="section4">
+            <div>
+                <h3>Looking to book?</h3>
+                <p>Explore a wide range of vehicles available for rent in your area. It's quick and easy to find the perfect ride for your next adventure with Crenzo</p>
+                <a href="{{ url_for('vehicle')}}"><button class="btn2">Book Now</button></a>
+            </div>
+        </section>
+
+        <section class="section5">
+            <h2>Browse by Make</h2>
+            <div class="carousel">
+                <marquee>
+                    <img src="{{ url_for('static', filename='images/Audi.png')}}"></img>
+                    <img src="{{ url_for('static', filename='images/BMW.png')}}"></img>
+                    <!-- <img src="{{ url_for('static', filename='images/Ford.png')}}"></img>
+                    <img src="{{ url_for('static', filename='images/Honda.png')}}"></img>
+                    <img src="{{ url_for('static', filename='images/LandRover.png')}}"></img> -->
+                    <img src="{{ url_for('static', filename='images/Mercedes-Benz.png')}}"></img>
+                    <img src="{{ url_for('static', filename='images/Tesla.png')}}"></img>
+                    <img src="{{ url_for('static', filename='images/Toyota.png')}}"></img>
+                </marquee>
+            </div>
+        </section>
+
+        <section class="section6">
+            <div>
+                <h3>Already Own A Vehicle?</h3>
+                <p>Selling your car? Turn your vehicle into an income source by listing it on CRENZO. Our platform offers a hassle-free way to connect with potential renters and earn money from your unused vehicle. Reach a broad audience of renters, set your rental terms, and enjoy the flexibility of managing your car's availability. Start your journey as a CRENZO seller today by listing your car today.</p>
+                <!-- <button class="btn2" style="background-color: white; color: #0A4E92; border: 1px solid #333333; width: fit-content;">LIST YOUR CAR</button> -->
+            </div>
+        </section>
+
+        <section class="section7">
+            <div>
+                <h3>How CRENZO works?</h3>
+                <ol>
+                    <li>Sign Up And Make An Account</li>
+                    <li>Browse For The Vehicle You Like</li>
+                    <li>Contact The Owner Within The App Before Booking</li>
+                    <li>Book Your Car</li>
+                    <li>Enjoy Your Rental</li>
+                </ol>
+            </div>
+        </section>
+    </div>
+{% endblock %}
